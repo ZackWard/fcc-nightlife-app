@@ -1,0 +1,19 @@
+{
+  "name": "fcc-nightlife-app",
+  "version": "0.0.1",
+  "description": "A nightlife coordination app for freeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Zack Ward",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZackWard/fcc-nightlife-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZackWard/fcc-nightlife-app/issues"
+  },
+  "homepage": "https://github.com/ZackWard/fcc-nightlife-app#readme"
+}
