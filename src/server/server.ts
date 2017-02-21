@@ -16,7 +16,7 @@ dotenv.config();
 db.connect('mongodb://localhost:27017/fcc_nightlife_app');
 
 // For development, we're going to use ngrok to expose our server to the internet so that Twitter can reach our callback URL.
-let ngrokUrl = "http://ba04ee06.ngrok.io";
+// let ngrokUrl = "http://ba04ee06.ngrok.io";
 let port = 3006;
 let publicPath = path.join(__dirname, "..", "public");
 let yelpToken: any = false;
@@ -27,7 +27,7 @@ var TwitterStrategy = require('passport-twitter').Strategy;
 passport.use(new TwitterStrategy({
     consumerKey: process.env.FCC_NIGHTLIFE_TWITTER_CONSUMER_KEY,
     consumerSecret: process.env.FCC_NIGHTLIFE_TWITTER_CONSUMER_SECRET,
-    callbackURL: ngrokUrl + "/login/twitter/callback"
+    callbackURL: "/login/twitter/callback"
 }, function (token, tokenSecret, profile, cb) {
     // This will be called when a user grants permission to our app to sign in with Twitter. 
     // Store the user in the database. The User object will eventually end up in req.user in Express.
